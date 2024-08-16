@@ -58,6 +58,7 @@ const rooms = {};
 
 io.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId) => {
+    console.log("rooms", rooms);
     console.log("join-room", roomId, userId);
 
     // Add the user to the room
