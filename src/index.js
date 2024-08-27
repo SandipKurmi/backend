@@ -14,7 +14,7 @@ const io = socketIo(server, {
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Video Chat Server is running");
 });
 
 const rooms = {};
